@@ -5,10 +5,10 @@ des nombres aléatoires après une attente d'une seconde.
 """
 import asyncio
 import random
-from typing import AsyncGenerator
+from typing import Generator
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """
     Boucle 10 fois, attend 1 seconde à chaque itération
     et génère (yield) un nombre décimal aléatoire entre 0 et 10.
